@@ -10,9 +10,9 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_marginTop="150dp"
-        android:src="@drawable/logo" />
+        android:src="@drawable/neogen_logo2" />
 
     <TextView
         android:id="@+id/text1"
