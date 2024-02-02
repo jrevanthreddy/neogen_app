@@ -3,7 +3,6 @@ package com.example.neogen1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +16,6 @@ public class MainActivity2 extends AppCompatActivity {
     TextView sign_up,forget_password;
     EditText email,password;
     Button sign_in_btm;
-    ImageView facebook,google;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +26,10 @@ public class MainActivity2 extends AppCompatActivity {
         email=findViewById(R.id.sign_in_email);
         password=findViewById(R.id.sign_in_password);
         sign_in_btm=findViewById(R.id.sing_in_btn);
-        facebook=findViewById(R.id.facebook);
-        google=findViewById(R.id.google);
+
 
         sign_up.setOnClickListener(v -> startActivity(new Intent(MainActivity2.this, Register_Page.class)));
         sign_in_btm.setOnClickListener(v -> attentLogin());
-        facebook.setOnClickListener(v -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/login/"))));
-        google.setOnClickListener(v -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://mail.google.com/mail/u/0/"))));
 
     }
 
